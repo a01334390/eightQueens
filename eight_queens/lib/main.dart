@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Eight Queens App'),
     );
   }
 }
@@ -44,16 +44,30 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  int _boardSize = 0;
 
-  void _incrementCounter() {
+  // Create a controller to retrieve data from the TextField
+  final boardController = TextEditingController();
+
+  @override
+  void dispose() {
+    // Clean the controller when the widget is disposed
+    boardController.dispose();
+    super.dispose();
+  }
+
+  /**
+   * Retrieve the board number and pass it to the eight queens controller
+   * TODO: Create the Responsible class in Dart
+   */
+  void _startProcessing() {
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-      _counter++;
+      _boardSize = int.parse(boardController.text);
     });
   }
 
@@ -91,20 +105,32 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text(
+                  'Select a board size',
+                  style: TextStyle(fontSize: 30),
+                  overflow: TextOverflow.ellipsis,
+                )
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
+            Container(
+              width: 200,
+              child: new TextField(
+                controller: boardController,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: "Board Size"
+                ),
+
+              ),
+            )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+        onPressed: _startProcessing,
+        tooltip: 'Process Positions',
+        child: Icon(Icons.done),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
