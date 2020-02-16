@@ -39,7 +39,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _boardSize = 0;
-
   ProgressDialog pr;
 
   // Create a controller to retrieve data from the TextField
@@ -65,9 +64,10 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _boardSize = int.parse(boardController.text);
     });
-//    await pr.show();
-    QueenResolver().solve(8);
-//    await pr.dismiss();
+    await pr.show();
+    await QueenResolver().solve(_boardSize);
+    await pr.dismiss();
+
     Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage(title: "Results")));
   }
 
@@ -142,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _startProcessing,
+        onPressed: _startProcessing ,
         tooltip: 'Process Positions',
         child: Icon(Icons.done),
       ), // This trailing comma makes auto-formatting nicer for build methods.
