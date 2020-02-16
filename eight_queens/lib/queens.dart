@@ -7,42 +7,56 @@ import "dart:io";
 
 class QueenResolver {
 
-  bool isSafe(int row, int col, slash, backslash, rowLookup, slashCodeLookup, backslashCodeLookup) {
-    if(slashCodeLookup[slash[row][col]] || backslashCodeLookup[backslash[row][col]] || rowLookup[row]) {
-      return false;
-    } else {
+  var count = 0;
+
+  bool isSafe(board, int row, int col, int n) {
+      // Check row on the left side
+      for (var i = 0; i < col; i++) {
+        if(board[row][i] == 1 && board[row][i] != null) {
+          return false;
+        }
+      }
+      // Check row on the upper diagonal
+      var i = row;
+      var j = col;
+      while(i >= 0 && j >= 0 ) {
+        if(board[i][j] != null && board[i][j] == 1) {
+          return false;
+        }
+        i -= 1;
+        j -= 1;
+      }
+      // Check lower diagonal
+      i = row;
+      j = col;
+      while(j >= 0 && i < n) {
+        if(board[i][j] != null && board[i][j] == 1) {
+          return false;
+        }
+        i += 1;
+        j -= 1;
+      }
+
       return true;
-    }
   }
 
-  bool solveQueens(board, int col, slash, backslash, rowLookup, slashCodeLookup,  backslashCodeLookup, int n) {
+  bool solveQueens(board, int col, int n) {
+
     if (col >= n) {
+      solution(board);
+      count++;
       return true;
     }
 
-    // Can the queen be placed on the given board?
-    for(int i = 0; i < n; i++ ) {
-      if(isSafe(i, col, slash, backslash, rowLookup, slashCodeLookup, backslashCodeLookup)) {
-        // Place the queen there
+    var res = false;
+    for(int i = 0; i < n; i++) {
+      if(isSafe(board, i, col, n)){
         board[i][col] = 1;
-        rowLookup[i] = true;
-        slashCodeLookup[slash[i][col]] = true;
-        backslashCodeLookup[backslash[i][col]] = true;
-
-        // Recur the rest of the queens
-        if(solveQueens(board, col + 1, slash, backslash, rowLookup, slashCodeLookup, backslashCodeLookup, n)) {
-          return true;
-        }
-
-        // If it didnt lead to success, take it off
+        res = solveQueens(board, col + 1, n);
         board[i][col] = 0;
-        rowLookup[i] = false;
-        slashCodeLookup[slash[i][col]] = false;
-        backslashCodeLookup[backslash[i][col]] = false;
       }
     }
-
-    return false;
+    return res;
   }
   
   void solution(List<List<int>> board) {
@@ -61,41 +75,13 @@ class QueenResolver {
 
   bool solve(int n) {
     // Create the initial queens board
-     List<List<int>> board = new List.generate(n, (_) => new List(n));;
+     List<List<int>> board = new List.generate(n, (_) => new List(n));
 
-    // Create helper matrixes
-     var slash = new List.generate(n, (_) => new List(n));
-     var backslash = new List.generate(n, (_) => new List(n));
-
-    //Array to tell us which column is occupied
-    var rowLookup = new List<bool>.filled(n, false);
-
-    // Create an array to tell us which diagonal are occupied
-    var slashCodeLookup = new List<bool>.filled(2*n-1, false);
-    var backslashCodeLookup = new List<bool>.filled(2*n-1, false);
-
-    // Initialize the helper matrixes
-    for(int i = 0; i < n; i++) {
-      for (int x = 0; x < n; x++) {
-        slash[i][x] = i + x;
-        backslash[i][x] = i - x + 7;
-      }
-    }
-    
-    if(solveQueens(board,
-        0,
-        slash,
-        backslash,
-        rowLookup,
-        slashCodeLookup,
-        backslashCodeLookup,
-        n) == false) {
+    if(solveQueens(board,0,n) == false) {
       print("Solution doesnt exist");
+      print("found solutions: "+count.toString());
       return false;
     }
-    
-    print("found a solution");
-    solution(board);
     return true;
   }
 }
