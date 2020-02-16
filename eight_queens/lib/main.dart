@@ -1,3 +1,4 @@
+import 'package:eight_queens/queens.dart';
 import 'package:eight_queens/results.dart';
 import 'package:flutter/material.dart';
 import 'package:progress_dialog/progress_dialog.dart';
@@ -64,9 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
       // called again, and so nothing would appear to happen.
       _boardSize = int.parse(boardController.text);
     });
-    await pr.show();
-    await new Future.delayed(const Duration(seconds: 5));
-    await pr.dismiss();
+//    await pr.show();
+    QueenResolver().solve(8);
+//    await pr.dismiss();
     Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage(title: "Results")));
   }
 
