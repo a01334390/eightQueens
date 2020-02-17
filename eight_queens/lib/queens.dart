@@ -9,7 +9,7 @@ class QueenResolver {
 
   int count = 0;
 
-  Future<bool> _isSafe(board, int row, int col, int n) async {
+  Future<bool> isSafe(board, int row, int col, int n) async {
       // Check row on the left side
       for (var i = 0; i < col; i++) {
         if(board[row][i] == 1 && board[row][i] != null) {
@@ -40,27 +40,27 @@ class QueenResolver {
       return true;
   }
 
-  Future<bool> _solveQueens(board, int col, int n) async {
+  Future<bool> solveQueens(board, int col, int n) async {
 
     if (col >= n) {
       count++;
-      _storeSolution(board).then((value) {
+      storeSolution(board).then((value) {
         return true;
       });
     }
 
     var res = false;
     for(int i = 0; i < n; i++) {
-      if(await _isSafe(board, i, col, n)){
+      if(await isSafe(board, i, col, n)){
         board[i][col] = 1;
-        res = await _solveQueens(board, col + 1, n);
+        res = await solveQueens(board, col + 1, n);
         board[i][col] = 0;
       }
     }
     return res;
   }
   
-  Future _storeSolution(List<List<int>> board) async {
+  Future storeSolution(List<List<int>> board) async {
     for(int i = 0; i < board.length; i++) {
       for(int x = 0; x < board[i].length ; x++) {
         if(board[i][x] == null) {
@@ -77,7 +77,7 @@ class QueenResolver {
     // Create the initial queens board
      List<List<int>> board = new List.generate(n, (_) => new List(n));
 
-    if(await _solveQueens(board,0,n) == false) {
+    if(await solveQueens(board,0,n) == false) {
       return count;
     }
     return count;
