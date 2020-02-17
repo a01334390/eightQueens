@@ -7,7 +7,7 @@ import "dart:io";
 
 class QueenResolver {
 
-  var count = 0;
+  List<List<List<int>>> boards = new List();
 
   Future<bool> _isSafe(board, int row, int col, int n) async {
       // Check row on the left side
@@ -43,8 +43,7 @@ class QueenResolver {
   Future<bool> _solveQueens(board, int col, int n) async {
 
     if (col >= n) {
-      _solution(board);
-      count++;
+      _storeSolution(board);
       return true;
     }
 
@@ -59,17 +58,16 @@ class QueenResolver {
     return res;
   }
   
-  void _solution(List<List<int>> board) {
+  void _storeSolution(List<List<int>> board) {
     for(int i = 0; i < board.length; i++) {
       for(int x = 0; x < board[i].length ; x++) {
         if(board[i][x] == null) {
-          print(0);
-        } else {
-          print(board[i][x]);
+          board[i][x] = 0;
         }
       }
-      print("next-->");
     }
+
+    boards.add(board);
   }
 
 
@@ -78,8 +76,7 @@ class QueenResolver {
      List<List<int>> board = new List.generate(n, (_) => new List(n));
 
     if(await _solveQueens(board,0,n) == false) {
-      print("Solution doesnt exist");
-      print("found solutions: "+count.toString());
+      print("found solutions: "+boards.length.toString());
       return false;
     }
     return true;
