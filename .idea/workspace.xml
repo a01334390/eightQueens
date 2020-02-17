@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a23023fe-943e-49fb-aaac-72229e9d9f43" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eight_queens/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/lib/results.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eight_queens/lib/results.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eight_queens/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eight_queens/test/widget_test.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29_x86" />
   <component name="FileEditorManager">
@@ -22,19 +19,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/framework.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
+            <state relative-caret-position="572">
               <caret line="1047" column="11" selection-start-line="1047" selection-start-column="11" selection-end-line="1047" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eight_queens/test/widget_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="345">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#0#1051#0" expanded="true" />
+                <element signature="e#357#400#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eight_queens/test/eight_test.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#1#43#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,17 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eight_queens/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eight_queens/lib/results.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="-1024">
+              <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -61,11 +62,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eight_queens/lib/queens.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#2031#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eight_queens/lib/results.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -84,22 +91,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.github/workflows/main.yml" />
-        <option value="$PROJECT_DIR$/eight_queens/lib/queens.dart" />
         <option value="$PROJECT_DIR$/eight_queens/lib/main.dart" />
         <option value="$PROJECT_DIR$/eight_queens/lib/results.dart" />
+        <option value="$PROJECT_DIR$/eight_queens/lib/queens.dart" />
+        <option value="$PROJECT_DIR$/eight_queens/test/eight_test.dart" />
+        <option value="$PROJECT_DIR$/eight_queens/test/widget_test.dart" />
       </list>
     </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
-        <option value="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" />
+        <option value="$PROJECT_DIR$/.idea/eightQueens.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="840" />
+    <option name="width" value="1047" />
     <option name="height" value="1027" />
   </component>
   <component name="ProjectView">
@@ -107,7 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -137,6 +150,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -158,14 +172,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" temporary="true" nameIsGenerated="true">
-      <option name="filePath" value="$PROJECT_DIR$/eight_queens/lib/main.dart" />
+  <component name="RunManager" selected="Flutter Test.App with invalid input wont show results widget">
+    <configuration name="App pushes a new view with results" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="App pushes a new view with results" />
+      <option name="testFile" value="$PROJECT_DIR$/eight_queens/test/widget_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="App with invalid input wont show results widget" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="App with invalid input wont show results widget" />
+      <option name="testFile" value="$PROJECT_DIR$/eight_queens/test/widget_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main Application tests" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="Main Application tests" />
+      <option name="testFile" value="$PROJECT_DIR$/eight_queens/test/widget_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="My App has an usable textfield" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="My App has an usable textfield" />
+      <option name="testFile" value="$PROJECT_DIR$/eight_queens/test/widget_test.dart" />
+      <method v="2" />
+    </configuration>
+    <configuration name="My App has the desired message" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="My App has the desired message" />
+      <option name="testFile" value="$PROJECT_DIR$/eight_queens/test/widget_test.dart" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Flutter.main.dart" />
+        <item itemvalue="Flutter Test.App with invalid input wont show results widget" />
+        <item itemvalue="Flutter Test.App pushes a new view with results" />
+        <item itemvalue="Flutter Test.My App has an usable textfield" />
+        <item itemvalue="Flutter Test.My App has the desired message" />
+        <item itemvalue="Flutter Test.Main Application tests" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +221,38 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="passing_a_complete_board_to_the_solver_method_returns_false - 2020.02.17 at 16h 34m 46s.xml">
+      <configuration name="passing a complete board to the solver method returns false" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="passing_a_complete_board_to_the_solver_method_returns_false - 2020.02.17 at 16h 34m 50s.xml">
+      <configuration name="passing a complete board to the solver method returns false" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="My_App_has_a_title - 2020.02.17 at 16h 40m 38s.xml">
+      <configuration name="My App has a title" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="Main_Application_tests - 2020.02.17 at 16h 41m 31s.xml">
+      <configuration name="Main Application tests" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="Main_Application_tests - 2020.02.17 at 16h 41m 42s.xml">
+      <configuration name="Main Application tests" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="My_App_has_the_desired_message - 2020.02.17 at 16h 42m 49s.xml">
+      <configuration name="My App has the desired message" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="My_App_has_an_usable_textfield - 2020.02.17 at 16h 45m 12s.xml">
+      <configuration name="My App has an usable textfield" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="My_App_has_an_usable_textfield - 2020.02.17 at 16h 46m 03s.xml">
+      <configuration name="My App has an usable textfield" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="App_pushes_a_new_view_with_results - 2020.02.17 at 16h 49m 36s.xml">
+      <configuration name="App pushes a new view with results" configurationId="FlutterTestConfigType" />
+    </history-entry>
+    <history-entry file="App_with_invalid_input_wont_show_results_widget - 2020.02.17 at 16h 51m 13s.xml">
+      <configuration name="App with invalid input wont show results widget" configurationId="FlutterTestConfigType" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -192,26 +263,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="1047" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info id="Capture Tool" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2875458" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.3044776" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32941177" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Find" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Flutter Inspector" order="2" />
@@ -219,56 +290,83 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Flutter Performance" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18681319" />
+      <window_info id="Structure" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32941177" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Flutter Inspector" order="2" />
+      <window_info anchor="right" id="Flutter Outline" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Flutter Performance" order="5" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
+    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml" />
+    <entry file="file://$PROJECT_DIR$/eight_queens/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eight_queens/lib/results.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="370">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/framework.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
+        <state relative-caret-position="572">
           <caret line="1047" column="11" selection-start-line="1047" selection-start-column="11" selection-end-line="1047" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eight_queens/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eight_queens/test/widget_test.dart">
+    <entry file="file://$PROJECT_DIR$/eight_queens/test/eight_test.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
           <folding>
-            <element signature="e#0#1051#0" expanded="true" />
+            <element signature="e#1#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eight_queens/lib/queens.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#2031#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eight_queens/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="68" column="17" lean-forward="true" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        <state relative-caret-position="-1024">
+          <caret line="48" column="55" lean-forward="true" selection-start-line="48" selection-start-column="55" selection-end-line="48" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eight_queens/lib/results.dart">
+    <entry file="file://$PROJECT_DIR$/eight_queens/test/widget_test.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="345">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#0#1051#0" expanded="true" />
+            <element signature="e#357#400#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
