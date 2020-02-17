@@ -3,8 +3,6 @@
  * Solved using algorithm found in: https://www.geeksforgeeks.org/n-queen-problem-using-branch-and-bound/
  */
 
-import "dart:io";
-
 import 'package:shared_preferences/shared_preferences.dart';
 
 class QueenResolver {

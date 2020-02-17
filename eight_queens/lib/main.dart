@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
     });
     await pr.show();
     await QueenResolver().solve(_boardSize);
-    await pr.dismiss();
+    pr.dismiss();
 
     Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage(title: "Results")));
   }
