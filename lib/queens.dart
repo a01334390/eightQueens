@@ -73,13 +73,13 @@ class QueenResolver {
     await prefs.setInt('count', count);
   }
 
-  Future<bool> solve(int n) async {
+  Future<int> solve(int n) async {
     // Create the initial queens board
      List<List<int>> board = new List.generate(n, (_) => new List(n));
 
     if(await _solveQueens(board,0,n) == false) {
-      return false;
+      return count;
     }
-    return true;
+    return count;
   }
 }
