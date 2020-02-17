@@ -37,19 +37,33 @@ class _ResultsPageState extends State<ResultsPage> {
       super.initState();
     });
   }
+  
+  Widget ResultItem(BuildContext context, int index) {
+    String todisplay = "";
+    for(int x = 0; x < boards[index].length; x++ ){
+      todisplay += boards[index][x].toString();
+      todisplay+= "\n";
+    }
+    return Text(todisplay);
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: new ListView.builder(
-        itemCount: boards.length ?? 0,
-        itemBuilder: (BuildContext context, int index) {
-          return new Text(boards[index].toString());
-        },
-      )
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: new ListView.builder(
+          itemCount: boards.length ?? 0,
+          itemBuilder: (BuildContext context, int index) {
+            return ListTile(
+              title: Text('Result ${index+1}'),
+              subtitle: Container(
+                child: ResultItem(context, index)
+              ),
+            );
+          },
+        )
     );
   }
 }
