@@ -7,7 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class QueenResolver {
 
-  List<List<List<int>>> boards = new List();
+  int count = 0;
 
   Future<bool> _isSafe(board, int row, int col, int n) async {
       // Check row on the left side
@@ -43,8 +43,10 @@ class QueenResolver {
   Future<bool> _solveQueens(board, int col, int n) async {
 
     if (col >= n) {
-      _storeSolution(board);
-      return true;
+      count++;
+      _storeSolution(board).then((value) {
+        return true;
+      });
     }
 
     var res = false;
@@ -58,7 +60,7 @@ class QueenResolver {
     return res;
   }
   
-  _storeSolution(List<List<int>> board) async {
+  Future _storeSolution(List<List<int>> board) async {
     for(int i = 0; i < board.length; i++) {
       for(int x = 0; x < board[i].length ; x++) {
         if(board[i][x] == null) {
@@ -66,19 +68,10 @@ class QueenResolver {
         }
       }
     }
-
-    boards.add(board);
-    await _saveToLocalStorage();
-  }
-
-  Future<bool> _saveToLocalStorage() async {
-    SharedPreferences.setMockInitialValues({});
     final prefs = await SharedPreferences.getInstance();
-    prefs.setString('result', boards.toString());
+    await prefs.setString('board'+count.toString(), board.toString());
+    await prefs.setInt('count', count);
   }
-
-
-
 
   Future<bool> solve(int n) async {
     // Create the initial queens board

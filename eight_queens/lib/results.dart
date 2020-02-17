@@ -12,13 +12,21 @@ class ResultsPage extends StatefulWidget {
 }
 
 class _ResultsPageState extends State<ResultsPage> {
-  var boards;
+  var boards = new List();
 
   Future retrieveEightQueensResults() async {
     final prefs = await SharedPreferences.getInstance();
-    String boardsString = await prefs.get('result');
+    int count = await prefs.getInt("count");
+    print(count);
+    var _boards = new List();
+    for(int i = 1 ; i < count + 1; i++) {
+      String s_board = prefs.getString('board'+i.toString());
+      var board = jsonDecode(s_board);
+      _boards.add(board);
+    }
+
     setState(() {
-      boards = jsonDecode(boardsString);
+      boards = _boards;
     });
   }
 
@@ -26,8 +34,8 @@ class _ResultsPageState extends State<ResultsPage> {
   void initState() {
     retrieveEightQueensResults().then((value) {
       print('async done');
+      super.initState();
     });
-    super.initState();
   }
 
   @override
@@ -37,7 +45,7 @@ class _ResultsPageState extends State<ResultsPage> {
         title: Text(widget.title),
       ),
       body: new ListView.builder(
-        itemCount: boards.length,
+        itemCount: boards.length ?? 0,
         itemBuilder: (BuildContext context, int index) {
           return new Text(boards[index].toString());
         },
