@@ -65,10 +65,10 @@ class _MyHomePageState extends State<MyHomePage> {
       _boardSize = int.parse(boardController.text);
     });
     await pr.show();
-    await QueenResolver().solve(_boardSize);
+    int count = await QueenResolver().solve(_boardSize);
     pr.dismiss();
 
-    await Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage(title: "Results")));
+    await Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage(title: "Results",count: count)));
   }
 
   @override

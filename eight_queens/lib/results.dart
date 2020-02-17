@@ -4,8 +4,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 
 class ResultsPage extends StatefulWidget {
-  ResultsPage({Key key, this.title}) : super(key: key);
+  ResultsPage({Key key, this.title, this.count}) : super(key: key);
   final String title;
+  final int count;
 
   @override
   _ResultsPageState createState() => _ResultsPageState();
@@ -16,10 +17,8 @@ class _ResultsPageState extends State<ResultsPage> {
 
   Future retrieveEightQueensResults() async {
     final prefs = await SharedPreferences.getInstance();
-    int count = await prefs.getInt("count");
-    print(count);
     var _boards = new List();
-    for(int i = 1 ; i < count + 1; i++) {
+    for(int i = 1 ; i < widget.count + 1; i++) {
       String s_board = prefs.getString('board'+i.toString());
       var board = jsonDecode(s_board);
       _boards.add(board);
