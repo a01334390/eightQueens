@@ -5,6 +5,8 @@
 
 import "dart:io";
 
+import 'package:shared_preferences/shared_preferences.dart';
+
 class QueenResolver {
 
   List<List<List<int>>> boards = new List();
@@ -58,7 +60,7 @@ class QueenResolver {
     return res;
   }
   
-  void _storeSolution(List<List<int>> board) {
+  _storeSolution(List<List<int>> board) async {
     for(int i = 0; i < board.length; i++) {
       for(int x = 0; x < board[i].length ; x++) {
         if(board[i][x] == null) {
@@ -68,7 +70,16 @@ class QueenResolver {
     }
 
     boards.add(board);
+    await _saveToLocalStorage();
   }
+
+  Future<bool> _saveToLocalStorage() async {
+    SharedPreferences.setMockInitialValues({});
+    final prefs = await SharedPreferences.getInstance();
+    prefs.setString('result', boards.toString());
+  }
+
+
 
 
   Future<bool> solve(int n) async {
@@ -76,7 +87,6 @@ class QueenResolver {
      List<List<int>> board = new List.generate(n, (_) => new List(n));
 
     if(await _solveQueens(board,0,n) == false) {
-      print("found solutions: "+boards.length.toString());
       return false;
     }
     return true;
