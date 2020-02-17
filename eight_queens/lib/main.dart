@@ -1,26 +1,20 @@
+import 'package:eight_queens/queens.dart';
+import 'package:eight_queens/results.dart';
 import 'package:flutter/material.dart';
+import 'package:progress_dialog/progress_dialog.dart';
+
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Eight Queens App'),
     );
   }
 }
@@ -44,21 +38,55 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  int _boardSize = 0;
+  ProgressDialog pr;
 
-  void _incrementCounter() {
+  // Create a controller to retrieve data from the TextField
+  final boardController = TextEditingController();
+
+  @override
+  void dispose() {
+    // Clean the controller when the widget is disposed
+    boardController.dispose();
+    super.dispose();
+  }
+
+  /**
+   * Retrieve the board number and pass it to the eight queens controller
+   * TODO: Create the Responsible class in Dart
+   */
+  void _startProcessing() async {
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
       // so that the display can reflect the updated values. If we changed
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
-      _counter++;
+      _boardSize = int.parse(boardController.text);
     });
+    await pr.show();
+    await QueenResolver().solve(_boardSize);
+    pr.dismiss();
+
+    await Navigator.push(context, MaterialPageRoute(builder: (context) => ResultsPage(title: "Results")));
   }
 
   @override
   Widget build(BuildContext context) {
+    // Build the progress Dialog Element and Style it
+    pr = new ProgressDialog(context);
+    pr.style(
+        message: 'Calculating results...',
+        borderRadius: 20.0,
+        progressWidget: CircularProgressIndicator(),
+        insetAnimCurve: Curves.easeInOut,
+        progress: 0.0,
+        maxProgress: 100.0,
+        progressTextStyle: TextStyle(
+            color: Colors.black, fontSize: 13.0, fontWeight: FontWeight.w400),
+        messageTextStyle: TextStyle(
+            color: Colors.black, fontSize: 19.0, fontWeight: FontWeight.w600)
+    );
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
@@ -91,20 +119,32 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Text(
+                  'Select a board size',
+                  style: TextStyle(fontSize: 30),
+                  overflow: TextOverflow.ellipsis,
+                )
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
+            Container(
+              width: 200,
+              child: new TextField(
+                controller: boardController,
+                decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: "Board Size"
+                ),
+
+              ),
+            )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+        onPressed: _startProcessing ,
+        tooltip: 'Process Positions',
+        child: Icon(Icons.done),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
