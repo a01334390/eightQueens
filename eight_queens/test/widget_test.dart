@@ -56,24 +56,5 @@ void main() {
       //Expect the new page to be shown
       expect(find.byType(ResultsPage),findsOneWidget);
     });
-
-    testWidgets('App with invalid input wont show results widget', (WidgetTester tester) async {
-      // Build our app and trigger a frame.
-      await tester.pumpWidget(MyApp());
-
-      // Enter a number into the textfield
-      await tester.enterText(find.byType(TextField), '0');
-
-      //Tap the button to go to the next screen
-      await tester.tap(find.byIcon(Icons.done));
-
-      // Wait for it to be shown
-      await tester.pumpAndSettle();
-
-      //Expect the new page to be shown
-      expect(find.byType(ResultsPage),findsNothing);
-    });
-
-
   });
 }
