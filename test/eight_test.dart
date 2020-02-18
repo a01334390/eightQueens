@@ -1,5 +1,6 @@
 import 'package:eight_queens/queens.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 
 void main() {
@@ -8,11 +9,13 @@ void main() {
   group('Eight Queens algorithm', () {
 
     test('count should be 2 on a 4 piece chessboard', () {
+      SharedPreferences.setMockInitialValues({});
       Future<int> future = QueenResolver().solve(4);
       expect(future,completion(equals(2)));
     });
 
     test('count should be 92 on a 8 piece chessboard', () {
+      SharedPreferences.setMockInitialValues({});
       Future<int> future = QueenResolver().solve(8);
       expect(future,completion(equals(92)));
     });
