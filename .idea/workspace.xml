@@ -2,82 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a23023fe-943e-49fb-aaac-72229e9d9f43" name="Default Changelist" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/eight_queens/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eight_queens/test/widget_test.dart" afterDir="false" />
-=======
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/.metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/kotlin/com/martntn/eight_queens/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/app/src/profile/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/android/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Flutter/AppFrameworkInfo.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Flutter/Debug.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Flutter/Release.xcconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Podfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/AppDelegate.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Base.lproj/Main.storyboard" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/ios/Runner/Runner-Bridging-Header.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/lib/main.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/lib/queens.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/lib/results.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/pubspec.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eight_queens/test/widget_test.dart" beforeDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/eight_queens/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eight_queens/lib/main.dart" afterDir="false" />
-=======
->>>>>>> release/workingfinal
-      <change beforePath="$PROJECT_DIR$/eight_queens/lib/results.dart" beforeDir="false" afterPath="$PROJECT_DIR$/eight_queens/lib/results.dart" afterDir="false" />
->>>>>>> release/working-2
->>>>>>> 9e328dfe3e823291b111abdaf39bbfd31f3f71cc
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,109 +16,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29_x86" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/framework.dart">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state relative-caret-position="167">
               <caret line="1020" column="29" selection-start-line="1020" selection-start-column="29" selection-end-line="1020" selection-end-column="29" />
-=======
-            <state relative-caret-position="572">
-              <caret line="1047" column="11" selection-start-line="1047" selection-start-column="11" selection-end-line="1047" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eight_queens/test/widget_test.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#1051#0" expanded="true" />
-                <element signature="e#357#400#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eight_queens/test/eight_test.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#1#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eight_queens/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="-44">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
->>>>>>> release/working-2
-=======
-            <state relative-caret-position="-1133">
-              <caret line="56" column="81" lean-forward="true" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
->>>>>>> release/workingfinal
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/framework.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15330">
-              <caret line="1047" column="11" selection-start-line="1047" selection-start-column="11" selection-end-line="1047" selection-end-column="11" />
-=======
-        <entry file="file://$PROJECT_DIR$/eight_queens/lib/queens.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="93" column="48" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#2016#0" expanded="true" />
-              </folding>
->>>>>>> 9e328dfe3e823291b111abdaf39bbfd31f3f71cc
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/eight_queens/test/widget_test.dart">
-=======
-        <entry file="file://$PROJECT_DIR$/eight_queens/lib/results.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-              <folding>
-                <element signature="e#1#43#0" expanded="true" />
-              </folding>
->>>>>>> release/working-2
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-=======
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eight_queens/pubspec.yaml">
->>>>>>> 9e328dfe3e823291b111abdaf39bbfd31f3f71cc
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="720">
               <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
@@ -201,7 +34,6 @@
           </provider>
         </entry>
       </file>
->>>>>>> release/working-2
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -210,43 +42,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/eight_queens/lib/results.dart" />
-        <option value="$PROJECT_DIR$/.github/workflows/main.yml" />
-=======
         <option value="$PROJECT_DIR$/.github/workflows/main.yml" />
         <option value="$PROJECT_DIR$/eight_queens/test/eight_test.dart" />
         <option value="$PROJECT_DIR$/eight_queens/pubspec.yaml" />
         <option value="$PROJECT_DIR$/eight_queens/lib/main.dart" />
         <option value="$PROJECT_DIR$/eight_queens/lib/queens.dart" />
         <option value="$PROJECT_DIR$/eight_queens/lib/results.dart" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/eight_queens/test/widget_test.dart" />
-=======
->>>>>>> release/working-2
->>>>>>> 9e328dfe3e823291b111abdaf39bbfd31f3f71cc
       </list>
     </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> release/workingfinal
         <option value="$PROJECT_DIR$/.idea/eightQueens.iml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
         <option value="$PROJECT_DIR$/.idea/modules.xml" />
         <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
         <option value="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" />
         <option value="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" />
->>>>>>> release/working-2
-=======
->>>>>>> release/workingfinal
       </list>
     </option>
   </component>
@@ -260,17 +74,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      <pane id="PackagesPane" />
-=======
->>>>>>> release/workingfinal
-      <pane id="Scope" />
->>>>>>> release/working-2
->>>>>>> 9e328dfe3e823291b111abdaf39bbfd31f3f71cc
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,19 +84,11 @@
             <path>
               <item name="eightQueens" type="b2602c69:ProjectViewProjectNode" />
               <item name="eightQueens" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name=".github" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="eight_queens" type="462c0819:PsiDirectoryNode" />
->>>>>>> release/working-2
             </path>
             <path>
               <item name="eightQueens" type="b2602c69:ProjectViewProjectNode" />
               <item name="eightQueens" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name=".github" type="462c0819:PsiDirectoryNode" />
-              <item name="workflows" type="462c0819:PsiDirectoryNode" />
-=======
               <item name="eight_queens" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -302,25 +97,13 @@
               <item name="eightQueens" type="462c0819:PsiDirectoryNode" />
               <item name="eight_queens" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
->>>>>>> release/working-2
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
-=======
->>>>>>> release/working-2
-=======
-      <pane id="PackagesPane" />
-<<<<<<< HEAD
-      <pane id="Scope" />
-=======
->>>>>>> release/workingfinal
->>>>>>> 9e328dfe3e823291b111abdaf39bbfd31f3f71cc
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -390,10 +173,6 @@
     </task>
     <servers />
   </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
   <component name="TestHistory">
     <history-entry file="passing_a_complete_board_to_the_solver_method_returns_false - 2020.02.17 at 16h 34m 50s.xml">
       <configuration name="passing a complete board to the solver method returns false" configurationId="FlutterTestConfigType" />
@@ -426,7 +205,6 @@
       <configuration name="App with invalid input wont show results widget" configurationId="FlutterTestConfigType" />
     </history-entry>
   </component>
->>>>>>> release/workingfinal
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -436,57 +214,27 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
->>>>>>> release/working-2
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info id="Capture Tool" order="1" />
-<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16544567" />
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2844933" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2875458" />
->>>>>>> release/working-2
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18681319" />
->>>>>>> release/workingfinal
->>>>>>> 9e328dfe3e823291b111abdaf39bbfd31f3f71cc
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Designer" order="5" />
       <window_info id="Resources Explorer" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32941177" />
-      <window_info anchor="bottom" id="TODO" order="1" />
-=======
-      <window_info anchor="bottom" id="Find" />
-=======
->>>>>>> release/workingfinal
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32941177" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.32941177" />
->>>>>>> release/working-2
       <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32941177" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32941177" />
-=======
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="7" visible="true" weight="0.32941177" />
-<<<<<<< HEAD
->>>>>>> release/working-2
-=======
       <window_info anchor="bottom" id="Find" order="8" />
->>>>>>> release/workingfinal
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Flutter Inspector" order="2" />
@@ -521,22 +269,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/eight_queens/pubspec.yaml" />
-    <entry file="file://$PROJECT_DIR$/eight_queens/lib/main.dart" />
-    <entry file="file://$PROJECT_DIR$/eight_queens/lib/results.dart" />
-    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-=======
-    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
->>>>>>> release/working-2
-=======
     <entry file="file://$PROJECT_DIR$/.github/workflows/main.yml" />
     <entry file="file://$PROJECT_DIR$/eight_queens/pubspec.yaml" />
     <entry file="file://$PROJECT_DIR$/eight_queens/lib/main.dart" />
@@ -545,57 +277,8 @@
     <entry file="file://$PROJECT_DIR$/eight_queens/lib/results.dart" />
     <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/framework.dart">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="167">
           <caret line="1020" column="29" selection-start-line="1020" selection-start-column="29" selection-end-line="1020" selection-end-column="29" />
-=======
-        <state relative-caret-position="572">
-          <caret line="1047" column="11" selection-start-line="1047" selection-start-column="11" selection-end-line="1047" selection-end-column="11" />
->>>>>>> release/workingfinal
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eight_queens/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state relative-caret-position="15330">
-=======
-        <state relative-caret-position="880">
->>>>>>> release/working-2
-          <caret line="1047" column="11" selection-start-line="1047" selection-start-column="11" selection-end-line="1047" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/eight_queens/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor" />
-=======
-        <state relative-caret-position="360">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eight_queens/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1133">
-          <caret line="56" column="81" lean-forward="true" selection-start-line="56" selection-start-column="81" selection-end-line="56" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
->>>>>>> release/workingfinal
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eight_queens/test/eight_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#1#43#0" expanded="true" />
-          </folding>
->>>>>>> 9e328dfe3e823291b111abdaf39bbfd31f3f71cc
         </state>
       </provider>
     </entry>
@@ -606,6 +289,5 @@
         </state>
       </provider>
     </entry>
->>>>>>> release/working-2
   </component>
 </project>
