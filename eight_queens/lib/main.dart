@@ -52,6 +52,10 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
 
+  ///
+  /// Creates a simple Dialog to show a message
+  /// Receives a [String] title and a [String] message to display a [AlertDialog]
+  ///
   void _showDialogBuilder(String title, String message) {
     showDialog(context: context,builder: (BuildContext context){
       return AlertDialog(
@@ -79,10 +83,11 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
   }
 
-  /**
-   * Retrieve the board number and pass it to the eight queens controller
-   * TODO: Create the Responsible class in Dart
-   */
+  ///
+  /// This method retrieves the [boardController.text] and checks if [isNumeric] and [boardController.text.isEmpty].
+  /// Then, it shows a [ProgressDialog] element while [QueenResolver] is executed.
+  /// Once a [count] is retrieved, we [Navigator.push] to [ResultsPage]
+  ///
   void _startProcessing() async {
 
     if(boardController.text.isEmpty){
