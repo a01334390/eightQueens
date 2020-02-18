@@ -1,4 +1,5 @@
 
+import 'package:eight_queens/queens.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
@@ -15,6 +16,11 @@ class ResultsPage extends StatefulWidget {
 class _ResultsPageState extends State<ResultsPage> {
   var boards = new List();
 
+  ///
+  /// Retrieves the [QueenResolver] [boards] that were calculated.
+  /// Will call [SharedPreferences] and get [String] for every posible solution.
+  /// Will then append it to [boards] and [setState()]
+  ///
   Future retrieveEightQueensResults() async {
     final prefs = await SharedPreferences.getInstance();
     var _boards = new List();
@@ -36,7 +42,11 @@ class _ResultsPageState extends State<ResultsPage> {
       super.initState();
     });
   }
-  
+
+  ///
+  /// Simple Item builder to display a [board]
+  /// Uses [String] concatenation to make it work
+  ///
   Widget ResultItem(BuildContext context, int index) {
     String todisplay = "";
     for(int x = 0; x < boards[index].length; x++ ){

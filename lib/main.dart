@@ -2,7 +2,7 @@ import 'package:eight_queens/queens.dart';
 import 'package:eight_queens/results.dart';
 import 'package:flutter/material.dart';
 import 'package:progress_dialog/progress_dialog.dart';
-
+import 'package:validators/validators.dart';
 
 void main() => runApp(MyApp());
 
@@ -40,6 +40,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _boardSize = 0;
   ProgressDialog pr;
+  bool shouldCheck;
 
   // Create a controller to retrieve data from the TextField
   final boardController = TextEditingController();
@@ -51,11 +52,54 @@ class _MyHomePageState extends State<MyHomePage> {
     super.dispose();
   }
 
-  /**
-   * Retrieve the board number and pass it to the eight queens controller
-   * TODO: Create the Responsible class in Dart
-   */
+  ///
+  /// Creates a simple Dialog to show a message
+  /// Receives a [String] title and a [String] message to display a [AlertDialog]
+  ///
+  void _showDialogBuilder(String title, String message) {
+    showDialog(context: context,builder: (BuildContext context){
+      return AlertDialog(
+        title: new Text(title),
+        content: new Text(message),
+        actions: <Widget>[
+          new FlatButton(
+              child: new Text("close"), onPressed: () {
+            setState(() {
+              _boardSize = 0;
+            });
+            Navigator.of(context).pop();
+          })
+        ],
+      );
+    });
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    setState(() {
+      shouldCheck = true;
+    });
+    super.initState();
+  }
+
+  ///
+  /// This method retrieves the [boardController.text] and checks if [isNumeric] and [boardController.text.isEmpty].
+  /// Then, it shows a [ProgressDialog] element while [QueenResolver] is executed.
+  /// Once a [count] is retrieved, we [Navigator.push] to [ResultsPage]
+  ///
   void _startProcessing() async {
+
+    if(boardController.text.isEmpty){
+      _showDialogBuilder("Empty Textfield", "Please enter a value into the text field");
+      return;
+    }
+
+    if(boardController.text.isNotEmpty && !isNumeric(boardController.text)) {
+      _showDialogBuilder("Non numeric", "Please enter a numeric value into the text field");
+      return;
+    }
+    
     setState(() {
       // This call to setState tells the Flutter framework that something has
       // changed in this State, which causes it to rerun the build method below
